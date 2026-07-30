@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Nurfauzi | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0f172a', /* Deep Slate/Navy Blue */
+                        navyLight: '#1e293b',
+                        gold: '#d97706', /* Elegant Amber/Gold */
+                        goldLight: '#f59e0b',
+                        bgLight: '#f8fafc',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bgLight text-slate-700 antialiased selection:bg-gold selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#home" class="text-xl font-bold text-navy tracking-tight">MN<span class="text-gold">.</span></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-gold transition">About</a>
+                    <a href="#experience" class="text-sm font-medium text-slate-600 hover:text-gold transition">Experience</a>
+                    <a href="#projects" class="text-sm font-medium text-slate-600 hover:text-gold transition">Projects</a>
+                    <a href="#skills" class="text-sm font-medium text-slate-600 hover:text-gold transition">Skills</a>
+                </div>
+                <a href="#contact" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-navy hover:bg-navyLight transition">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 max-w-6xl mx-auto flex flex-col items-center text-center">
+        <span class="px-3 py-1 text-xs font-semibold bg-gold/10 text-gold rounded-full mb-6 uppercase tracking-wider">Economics Graduate & AWP Syariah</span>
+        <h1 class="text-4xl md:text-6xl font-bold text-navy tracking-tight mb-6 leading-tight">
+            Muhamad Nurfauzi<span class="text-gold">.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-600 max-w-2xl mb-10 leading-relaxed">
+            Translating complex data into actionable financial insights. Analytical, detail-oriented, and experienced in wealth management, data analysis, and strategic organizational leadership.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#experience" class="px-8 py-3 bg-navy text-white font-medium rounded-md hover:bg-navyLight transition shadow-lg shadow-navy/20">
+                View Experience
+            </a>
+            <a href="#contact" class="px-8 py-3 bg-white border border-slate-300 text-navy font-medium rounded-md hover:border-gold hover:text-gold transition">
+                Let's Connect
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-20 bg-white border-y border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-navy mb-4">About Me</h2>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+            </div>
+            <div class="text-lg text-slate-600 leading-relaxed text-justify md:text-center space-y-6">
+                <p>
+                    I am an Economics Graduate (S.E.) from Universitas Islam Negeri Sunan Kalijaga Yogyakarta (GPA: 3.81) and a certified Associate Wealth Planner Syariah (AWP). I possess a solid foundation in wealth management, financial budget management, and database creation.
+                </p>
+                <p>
+                    With proven leadership experience as Chairman of ForSEBI and Head of Scientific Division at FoSSEI, combined with hands-on expertise as a Research Assistant and Data Management Specialist, I am highly dedicated to delivering data integrity and impactful financial analysis.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Projects Section -->
+    <section id="experience" class="py-20 bg-bgLight">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-navy mb-4">Professional Experience</h2>
+                <div class="w-16 h-1 bg-gold rounded-full"></div>
+            </div>
+
+            <!-- Grid Cards Experience -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-gold/50 hover:shadow-xl transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Research Assistant</h3>
+                            <p class="text-sm font-medium text-slate-500 mt-1">PT. Veda Alterasi Indonesia (BAPPEDA DIY)</p>
+                        </div>
+                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">May 2025 - Jul 2025</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 list-disc list-inside space-y-2 mt-4">
+                        <li>Collected datasets from 169 Kampung Tanggap Bencana (KTB).</li>
+                        <li>Structured and consolidated administrative data into a centralized spreadsheet.</li>
+                        <li>Executed comprehensive data cleansing to guarantee 100% data integrity.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-gold/50 hover:shadow-xl transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Data Management Specialist (Intern)</h3>
+                            <p class="text-sm font-medium text-slate-500 mt-1">BAPPEDA Kota Yogyakarta</p>
+                        </div>
+                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">Jan 2025 - Feb 2025</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 list-disc list-inside space-y-2 mt-4">
+                        <li>Compiled 1,000+ proposals into a spreadsheet database.</li>
+                        <li>Evaluated cost estimates against Rp800+ million budget ceiling.</li>
+                        <li>Verified proposal wording to comply with official Musrenbang nomenclature.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-gold/50 hover:shadow-xl transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Head of Scientific Division</h3>
+                            <p class="text-sm font-medium text-slate-500 mt-1">FoSSEI - Yogyakarta</p>
+                        </div>
+                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">Feb 2026 - Present</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 list-disc list-inside space-y-2 mt-4">
+                        <li>Spearheaded curriculum standardization across 9 KSEI in Yogyakarta.</li>
+                        <li>Initiated Research Camp 2026 to elevate research capacity.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-gold/50 hover:shadow-xl transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Chairman / President</h3>
+                            <p class="text-sm font-medium text-slate-500 mt-1">ForSEBI UIN Sunan Kalijaga</p>
+                        </div>
+                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">Nov 2024 - Nov 2025</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 list-disc list-inside space-y-2 mt-4">
+                        <li>Managed 300+ members and 6 core departments.</li>
+                        <li>Led TEMILREG 2025, an economic research forum with 100+ participants.</li>
+                        <li>Built strategic partnerships with MES, FoSSEI, and BWI.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Projects & Achievements -->
+            <div id="projects" class="mb-12 pt-8">
+                <h2 class="text-3xl font-bold text-navy mb-4">Achievements & Projects</h2>
+                <div class="w-16 h-1 bg-gold rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg border border-slate-200 hover:shadow-md transition">
+                    <i class="fas fa-trophy text-gold text-2xl mb-4"></i>
+                    <h4 class="font-bold text-navy mb-2">Top 3 Best Speaker</h4>
+                    <p class="text-xs text-slate-500 mb-2">Temu Ilmiah Regional Yogyakarta (Jun 2025)</p>
+                    <p class="text-sm text-slate-600 line-clamp-3">Transformasi Digital Marketing Untuk Pendekatan Edukasi Literasi Ekonomi Syariah di Kalangan Gen Z.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-slate-200 hover:shadow-md transition">
+                    <i class="fas fa-medal text-gold text-2xl mb-4"></i>
+                    <h4 class="font-bold text-navy mb-2">Runner Up Essay Competition</h4>
+                    <p class="text-xs text-slate-500 mb-2">Islamic Economic Festival, UIN SMH Banten (Jun 2024)</p>
+                    <p class="text-sm text-slate-600 line-clamp-3">I-HEV Inovasi Konseptual Berbasis Community Based Halal Ecotourism Demi Mengentas Kemiskinan di Kabupaten Indramayu.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-slate-200 hover:shadow-md transition">
+                    <i class="fas fa-chart-line text-gold text-2xl mb-4"></i>
+                    <h4 class="font-bold text-navy mb-2">Sukukversity Participant</h4>
+                    <p class="text-xs text-slate-500 mb-2">OJK & DJPPR (Nov 2025)</p>
+                    <p class="text-sm text-slate-600 line-clamp-3">National Sharia Finance Program covering Sharia capital markets, SBSN, and Sukuk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-navy text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">My Skills</h2>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <!-- Technical Skills -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                        <i class="fas fa-laptop-code text-gold"></i> Technical Skills
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-navyLight border border-slate-700 rounded-full text-sm font-medium hover:border-gold hover:text-gold transition cursor-default">Financial Analysis</span>
+                        <span class="px-4 py-2 bg-navyLight border border-slate-700 rounded-full text-sm font-medium hover:border-gold hover:text-gold transition cursor-default">Data Analysis</span>
+                        <span class="px-4 py-2 bg-navyLight border border-slate-700 rounded-full text-sm font-medium hover:border-gold hover:text-gold transition cursor-default">Wealth Management</span>
+                        <span class="px-4 py-2 bg-navyLight border border-slate-700 rounded-full text-sm font-medium hover:border-gold hover:text-gold transition cursor-default">SQL & Tableau</span>
+                        <span class="px-4 py-2 bg-navyLight border border-slate-700 rounded-full text-sm font-medium hover:border-gold hover:text-gold transition cursor-default">Advanced Excel</span>
+                        <span class="px-4 py-2 bg-navyLight border border-slate-700 rounded-full text-sm font-medium hover:border-gold hover:text-gold transition cursor-default">SPSS & Stata</span>
+                        <span class="px-4 py-2 bg-navyLight border border-slate-700 rounded-full text-sm font-medium hover:border-gold hover:text-gold transition cursor-default">EViews & SmartPLS4</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                        <i class="fas fa-users text-gold"></i> Interpersonal Skills
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-navyLight border border-slate-700 rounded-full text-sm font-medium hover:border-gold hover:text-gold transition cursor-default">Strategic Planning</span>
+                        <span class="px-4 py-2 bg-navyLight border border-slate-700 rounded-full text-sm font-medium hover:border-gold hover:text-gold transition cursor-default">Leadership</span>
+                        <span class="px-4 py-2 bg-navyLight border border-slate-700 rounded-full text-sm font-medium hover:border-gold hover:text-gold transition cursor-default">Public Speaking</span>
+                        <span class="px-4 py-2 bg-navyLight border border-slate-700 rounded-full text-sm font-medium hover:border-gold hover:text-gold transition cursor-default">Problem-Solving</span>
+                        <span class="px-4 py-2 bg-navyLight border border-slate-700 rounded-full text-sm font-medium hover:border-gold hover:text-gold transition cursor-default">Negotiation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-bgLight">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-navy mb-4">Get In Touch</h2>
+            <div class="w-16 h-1 bg-gold mx-auto rounded-full mb-10"></div>
+            
+            <p class="text-slate-600 mb-12 max-w-2xl mx-auto">
+                Ready to bring professional dedication and actionable financial insights to your team. Open for Financial Analysis Intern roles or relevant opportunities.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <a href="mailto:nurfauzim009@gmail.com" class="flex items-center gap-3 px-6 py-4 bg-white border border-slate-200 rounded-lg hover:border-gold hover:shadow-lg transition w-full md:w-auto">
+                    <i class="fas fa-envelope text-gold text-xl"></i>
+                    <span class="text-navy font-medium">nurfauzim009@gmail.com</span>
+                </a>
+                
+                <a href="tel:082342555870" class="flex items-center gap-3 px-6 py-4 bg-white border border-slate-200 rounded-lg hover:border-gold hover:shadow-lg transition w-full md:w-auto">
+                    <i class="fas fa-phone text-gold text-xl"></i>
+                    <span class="text-navy font-medium">0823-4255-5870</span>
+                </a>
+
+                <a href="https://linkedin.com/in/muhamadnurfauzi9" target="_blank" class="flex items-center gap-3 px-6 py-4 bg-white border border-slate-200 rounded-lg hover:border-gold hover:shadow-lg transition w-full md:w-auto">
+                    <i class="fab fa-linkedin text-gold text-xl"></i>
+                    <span class="text-navy font-medium">LinkedIn Profile</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-slate-800 py-8 text-center">
+        <p class="text-slate-400 text-sm">
+            &copy; 2026 Muhamad Nurfauzi. All rights reserved. <br>
+            <span class="text-xs mt-2 inline-block text-slate-500">Minimalist & Responsive Design.</span>
+        </p>
+    </footer>
+
+</body>
+</html>
+
+```
