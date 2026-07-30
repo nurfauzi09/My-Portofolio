@@ -202,37 +202,156 @@
         </div>
     </div>
 
-                <!-- Card 3 -->
-                <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-gold/50 hover:shadow-xl transition group">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Head of Scientific Division</h3>
-                            <p class="text-sm font-medium text-slate-500 mt-1">FoSSEI - Yogyakarta</p>
-                        </div>
-                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">Feb 2026 - Present</span>
+                <!-- ================= ORGANIZATIONAL EXPERIENCE SECTION ================= -->
+    <div class="mb-16 mt-12">
+        <h2 class="text-3xl font-bold text-navy mb-6 border-b-4 border-gold inline-block pb-2">Organizational Experience</h2>
+        
+        <!-- Bikin jadi 3 kolom (lg:grid-cols-3) biar pas buat 3 pengalaman lo -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Card FoSSEI -->
+            <div class="bg-white rounded-xl p-6 shadow-lg border border-slate-100 hover:shadow-xl hover:border-gold/30 transition duration-300 cursor-pointer group flex flex-col h-full" onclick="document.getElementById('modal-fossei').classList.remove('hidden')">
+                <div class="flex items-start gap-4 mb-4">
+                    <img src="Logo FoSSEI Yogyakarta.png" alt="FoSSEI Logo" class="w-14 h-14 object-contain rounded-md border border-slate-100 p-1">
+                    <div>
+                        <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Head of Scientific Div.</h3>
+                        <p class="text-slate-500 font-medium text-sm mt-1">FoSSEI - Yogyakarta</p>
+                        <span class="inline-block px-2 py-1 bg-slate-100 text-slate-600 text-xs font-semibold rounded-md mt-2">Feb 2026 - Present</span>
                     </div>
-                    <ul class="text-sm text-slate-600 list-disc ml-4 space-y-2 mt-4">
-                        <li>Spearheaded curriculum standardization across 9 KSEI in Yogyakarta.</li>
-                        <li>Initiated Research Camp 2026 to elevate research capacity.</li>
-                    </ul>
                 </div>
+                <!-- Teaser Jobdesc -->
+                <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                    Spearheaded the curriculum standardization of Islamic economics discussion across 9 KSEI in the Yogyakarta region...
+                </p>
+                <!-- Tombol Read More -->
+                <div class="mt-auto border-t border-slate-100 pt-4">
+                    <p class="text-sm text-gold font-bold flex items-center gap-2 group-hover:text-navy transition">
+                        Read more <span class="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                    </p>
+                </div>
+            </div>
 
-                <!-- Card 4 -->
-                <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-gold/50 hover:shadow-xl transition group">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Chairman / President</h3>
-                            <p class="text-sm font-medium text-slate-500 mt-1">ForSEBI UIN Sunan Kalijaga</p>
-                        </div>
-                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">Nov 2024 - Nov 2025</span>
+            <!-- Card ForSEBI Chairman -->
+            <div class="bg-white rounded-xl p-6 shadow-lg border border-slate-100 hover:shadow-xl hover:border-gold/30 transition duration-300 cursor-pointer group flex flex-col h-full" onclick="document.getElementById('modal-forsebi-chair').classList.remove('hidden')">
+                <div class="flex items-start gap-4 mb-4">
+                    <img src="Logo ForSEBI.png" alt="ForSEBI Logo" class="w-14 h-14 object-contain rounded-md border border-slate-100 p-1">
+                    <div>
+                        <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Chairman / President</h3>
+                        <p class="text-slate-500 font-medium text-sm mt-1">ForSEBI UIN Sunan Kalijaga</p>
+                        <span class="inline-block px-2 py-1 bg-slate-100 text-slate-600 text-xs font-semibold rounded-md mt-2">Nov 2024 - Nov 2025</span>
                     </div>
-                    <ul class="text-sm text-slate-600 list-disc ml-4 space-y-2 mt-4">
-                        <li>Managed 300+ members and 6 core departments.</li>
-                        <li>Led TEMILREG 2025, an economic research forum with 100+ participants.</li>
-                        <li>Built strategic partnerships with MES, FoSSEI, and BWI.</li>
+                </div>
+                <!-- Teaser Jobdesc -->
+                <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                    Managed 300+ members and 6 core departments, driving the effective execution of all cross-departmental work programs...
+                </p>
+                <!-- Tombol Read More -->
+                <div class="mt-auto border-t border-slate-100 pt-4">
+                    <p class="text-sm text-gold font-bold flex items-center gap-2 group-hover:text-navy transition">
+                        Read more <span class="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card ForSEBI Secretary -->
+            <div class="bg-white rounded-xl p-6 shadow-lg border border-slate-100 hover:shadow-xl hover:border-gold/30 transition duration-300 cursor-pointer group flex flex-col h-full" onclick="document.getElementById('modal-forsebi-sec').classList.remove('hidden')">
+                <div class="flex items-start gap-4 mb-4">
+                    <img src="Logo ForSEBI.png" alt="ForSEBI Logo" class="w-14 h-14 object-contain rounded-md border border-slate-100 p-1">
+                    <div>
+                        <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Secretary of IGN Dept.</h3>
+                        <p class="text-slate-500 font-medium text-sm mt-1">ForSEBI UIN Sunan Kalijaga</p>
+                        <span class="inline-block px-2 py-1 bg-slate-100 text-slate-600 text-xs font-semibold rounded-md mt-2">Nov 2023 - Nov 2024</span>
+                    </div>
+                </div>
+                <!-- Teaser Jobdesc -->
+                <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                    Managed comprehensive administrative operations and governance within the department. Handled incoming and outgoing correspondence...
+                </p>
+                <!-- Tombol Read More -->
+                <div class="mt-auto border-t border-slate-100 pt-4">
+                    <p class="text-sm text-gold font-bold flex items-center gap-2 group-hover:text-navy transition">
+                        Read more <span class="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= MODALS (POP-UP) ORGANIZATIONAL ================= -->
+    
+    <!-- Modal FoSSEI -->
+    <div id="modal-fossei" class="hidden fixed inset-0 bg-slate-900/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onclick="if(event.target === this) this.classList.add('hidden')">
+        <div class="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl relative">
+            <button onclick="document.getElementById('modal-fossei').classList.add('hidden')" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-red-100 hover:text-red-600 transition font-bold">✕</button>
+            <div class="p-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="Logo FoSSEI Yogyakarta.png" alt="FoSSEI Logo" class="w-16 h-16 object-contain rounded-md border border-slate-100 p-1">
+                    <div>
+                        <h3 class="text-2xl font-bold text-navy">Head of Scientific Division</h3>
+                        <p class="text-gold font-medium">FoSSEI - Yogyakarta | Feb 2026 - Present</p>
+                    </div>
+                </div>
+                
+                <div class="text-slate-600 space-y-4 text-justify leading-relaxed border-t border-slate-100 pt-4">
+                    <ul class="list-disc ml-5 space-y-3">
+                        <li>Spearheaded the curriculum standardization of Islamic economics discussion across 9 KSEI (Kelompok Studi Ekonomi Islam) in the Yogyakarta region.</li>
+                        <li>Led the department to ensure the consistent achievement of organizational Key Performance Indicators (KPIs).</li>
+                        <li>Initiated and spearheaded the Research Camp 2026 to elevate the research capacity and quality of KSEI members at the regional level.</li>
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Modal ForSEBI Chairman -->
+    <div id="modal-forsebi-chair" class="hidden fixed inset-0 bg-slate-900/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onclick="if(event.target === this) this.classList.add('hidden')">
+        <div class="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl relative">
+            <button onclick="document.getElementById('modal-forsebi-chair').classList.add('hidden')" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-red-100 hover:text-red-600 transition font-bold">✕</button>
+            <div class="p-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="Logo ForSEBI.png" alt="ForSEBI Logo" class="w-16 h-16 object-contain rounded-md border border-slate-100 p-1">
+                    <div>
+                        <h3 class="text-2xl font-bold text-navy">Chairman / President</h3>
+                        <p class="text-gold font-medium">ForSEBI UIN Sunan Kalijaga | Nov 2024 - Nov 2025</p>
+                    </div>
+                </div>
+                
+                <div class="text-slate-600 space-y-4 text-justify leading-relaxed border-t border-slate-100 pt-4">
+                    <ul class="list-disc ml-5 space-y-3">
+                        <li>Managed 300+ members and 6 core departments, driving the effective execution of all cross-departmental work programs.</li>
+                        <li>Led (Temu Ilmiah Regional) TEMILREG 2025, a major economic research forum involving 100+ participants across Yogyakarta.</li>
+                        <li>Built strategic partnerships with MES (Masyarakat Ekonomi Syariah), FoSSEI (Forum Silaturahim Studi Ekonomi Islam), and BWI (Badan Wakaf Indonesia) to run local programs including 'Bulan Wakaf' and local programs like 'Nglarisi’.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ForSEBI Secretary -->
+    <div id="modal-forsebi-sec" class="hidden fixed inset-0 bg-slate-900/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onclick="if(event.target === this) this.classList.add('hidden')">
+        <div class="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl relative">
+            <button onclick="document.getElementById('modal-forsebi-sec').classList.add('hidden')" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-red-100 hover:text-red-600 transition font-bold">✕</button>
+            <div class="p-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="Logo ForSEBI.png" alt="ForSEBI Logo" class="w-16 h-16 object-contain rounded-md border border-slate-100 p-1">
+                    <div>
+                        <h3 class="text-2xl font-bold text-navy">Secretary of the IGN Department</h3>
+                        <p class="text-gold font-medium">ForSEBI UIN Sunan Kalijaga | Nov 2023 - Nov 2024</p>
+                    </div>
+                </div>
+                
+                <div class="text-slate-600 space-y-4 text-justify leading-relaxed border-t border-slate-100 pt-4">
+                    <ul class="list-disc ml-5 space-y-3">
+                        <li>Managed comprehensive administrative operations and governance within the department.</li>
+                        <li>Handled incoming and outgoing correspondence to ensure seamless inter-departmental communication flow.</li>
+                        <li>Planned, coordinated, and monitored various departmental work programs (program kerja) to ensure strict alignment with targeted goals.</li>
+                        <li>Maintained and updated the departmental database to support team efficiency and smooth daily operations.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
             <!-- Projects & Achievements -->
             <div id="projects" class="mb-12 pt-8">
