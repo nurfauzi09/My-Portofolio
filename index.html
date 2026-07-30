@@ -97,45 +97,110 @@
 
     <!-- Experience & Projects Section -->
     <section id="experience" class="py-20 bg-bgLight">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-12">
-                <h2 class="text-3xl font-bold text-navy mb-4">Professional Experience</h2>
-                <div class="w-16 h-1 bg-gold rounded-full"></div>
+        <!-- ================= PROFESSIONAL EXPERIENCE SECTION ================= -->
+    <div class="mb-16">
+        <h3 class="text-2xl font-bold text-navy mb-6 border-b-2 border-gold inline-block pb-2">Professional Experience</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Card PT Veda -->
+            <div class="bg-white rounded-xl p-6 shadow-lg border border-slate-100 hover:shadow-xl hover:border-gold/30 transition duration-300 cursor-pointer group flex flex-col h-full" onclick="document.getElementById('modal-veda').classList.remove('hidden')">
+                <div class="flex items-start gap-4 mb-4">
+                    <img src="Logo PT Veda Alterasi Indonesia.png" alt="PT Veda Logo" class="w-14 h-14 object-contain rounded-md border border-slate-100 p-1">
+                    <div>
+                        <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Research Assistant</h3>
+                        <p class="text-slate-500 font-medium text-sm mt-1">PT. Veda Alterasi Indonesia</p>
+                        <span class="inline-block px-2 py-1 bg-slate-100 text-slate-600 text-xs font-semibold rounded-md mt-2">May 2025 - Jul 2025</span>
+                    </div>
+                </div>
+                <!-- Teaser Jobdesc -->
+                <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                    Mengkonsolidasi dan memastikan 100% integritas data dari ratusan titik Kampung Tanggap Bencana (KTB) di wilayah DIY...
+                </p>
+                <!-- Tombol Read More -->
+                <div class="mt-auto border-t border-slate-100 pt-4">
+                    <p class="text-sm text-gold font-bold flex items-center gap-2 group-hover:text-navy transition">
+                        Read more <span class="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                    </p>
+                </div>
             </div>
 
-            <!-- Grid Cards Experience -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-                <!-- Card 1 -->
-                <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-gold/50 hover:shadow-xl transition group">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Research Assistant</h3>
-                            <p class="text-sm font-medium text-slate-500 mt-1">PT. Veda Alterasi Indonesia (BAPPEDA DIY)</p>
-                        </div>
-                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">May 2025 - Jul 2025</span>
+            <!-- Card BAPPEDA -->
+            <div class="bg-white rounded-xl p-6 shadow-lg border border-slate-100 hover:shadow-xl hover:border-gold/30 transition duration-300 cursor-pointer group flex flex-col h-full" onclick="document.getElementById('modal-bappeda').classList.remove('hidden')">
+                <div class="flex items-start gap-4 mb-4">
+                    <img src="Logo BAPPEDA Yogyakarta.png" alt="BAPPEDA Logo" class="w-14 h-14 object-contain rounded-md border border-slate-100 p-1">
+                    <div>
+                        <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Data Management Intern</h3>
+                        <p class="text-slate-500 font-medium text-sm mt-1">BAPPEDA Kota Yogyakarta</p>
+                        <span class="inline-block px-2 py-1 bg-slate-100 text-slate-600 text-xs font-semibold rounded-md mt-2">Jan 2025 - Feb 2025</span>
                     </div>
-                    <ul class="text-sm text-slate-600 list-disc ml-4 space-y-2 mt-4">
+                </div>
+                <!-- Teaser Jobdesc -->
+                <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                    Mengelola ribuan proposal pengajuan dalam database dan mengevaluasi estimasi biaya terhadap plafon anggaran...
+                </p>
+                <!-- Tombol Read More -->
+                <div class="mt-auto border-t border-slate-100 pt-4">
+                    <p class="text-sm text-gold font-bold flex items-center gap-2 group-hover:text-navy transition">
+                        Read more <span class="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= MODALS (POP-UP) ================= -->
+    
+    <!-- Modal PT Veda -->
+    <div id="modal-veda" class="hidden fixed inset-0 bg-slate-900/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onclick="if(event.target === this) this.classList.add('hidden')">
+        <div class="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl relative">
+            <button onclick="document.getElementById('modal-veda').classList.add('hidden')" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-red-100 hover:text-red-600 transition font-bold">✕</button>
+            <div class="p-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="Logo PT Veda Alterasi Indonesia.png" alt="PT Veda Logo" class="w-16 h-16 object-contain rounded-md border border-slate-100 p-1">
+                    <div>
+                        <h3 class="text-2xl font-bold text-navy">Research Assistant</h3>
+                        <p class="text-gold font-medium">PT. Veda Alterasi Indonesia | May - Jul 2025</p>
+                    </div>
+                </div>
+                <div class="text-slate-600 space-y-4 text-justify leading-relaxed border-t border-slate-100 pt-4">
+                    <p>Sebagai Research Assistant, peran gue sangat krusial dalam memastikan pondasi data yang bersih dan terstruktur untuk analisis lanjutan oleh tim ahli BAPPEDA DIY. Gue bertanggung jawab penuh atas konsolidasi data dari ratusan titik KTB (Kampung Tanggap Bencana).</p>
+                    <h4 class="font-bold text-navy mt-6 mb-2">Key Highlights:</h4>
+                    <ul class="list-disc ml-4 space-y-2">
                         <li>Collected datasets from 169 Kampung Tanggap Bencana (KTB).</li>
                         <li>Structured and consolidated administrative data into a centralized spreadsheet.</li>
                         <li>Executed comprehensive data cleansing to guarantee 100% data integrity.</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </div>
 
-                <!-- Card 2 -->
-                <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-gold/50 hover:shadow-xl transition group">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold text-navy group-hover:text-gold transition">Data Management Specialist (Intern)</h3>
-                            <p class="text-sm font-medium text-slate-500 mt-1">BAPPEDA Kota Yogyakarta</p>
-                        </div>
-                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">Jan 2025 - Feb 2025</span>
+    <!-- Modal BAPPEDA -->
+    <div id="modal-bappeda" class="hidden fixed inset-0 bg-slate-900/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onclick="if(event.target === this) this.classList.add('hidden')">
+        <div class="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl relative">
+            <button onclick="document.getElementById('modal-bappeda').classList.add('hidden')" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-red-100 hover:text-red-600 transition font-bold">✕</button>
+            <div class="p-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="Logo BAPPEDA Yogyakarta.png" alt="BAPPEDA Logo" class="w-16 h-16 object-contain rounded-md border border-slate-100 p-1">
+                    <div>
+                        <h3 class="text-2xl font-bold text-navy">Data Management Specialist (Intern)</h3>
+                        <p class="text-gold font-medium">BAPPEDA Kota Yogyakarta | Jan - Feb 2025</p>
                     </div>
-                    <ul class="text-sm text-slate-600 list-disc ml-4 space-y-2 mt-4">
+                </div>
+                <div class="text-slate-600 space-y-4 text-justify leading-relaxed border-t border-slate-100 pt-4">
+                    <p>Selama magang di BAPPEDA Kota Yogyakarta, fokus utama gue adalah memilah, mengevaluasi, dan menyelaraskan data proposal agar sesuai dengan standar Musrenbang untuk memastikan efisiensi anggaran.</p>
+                    <h4 class="font-bold text-navy mt-6 mb-2">Key Highlights:</h4>
+                    <ul class="list-disc ml-4 space-y-2">
                         <li>Compiled 1,000+ proposals into a spreadsheet database.</li>
                         <li>Evaluated cost estimates against Rp800+ million budget ceiling.</li>
                         <li>Verified proposal wording to comply with official Musrenbang nomenclature.</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </div>
 
                 <!-- Card 3 -->
                 <div class="bg-white p-8 rounded-xl border border-slate-200 hover:border-gold/50 hover:shadow-xl transition group">
