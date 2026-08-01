@@ -3,31 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Sales Dashboard</title>
+    <title>Specialized Bicycles: Sales Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0f172a',
+                        gold: '#d4af37',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-slate-50 p-4 md:p-8 font-sans">
-    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-lg p-6 md:p-10">
+<body class="bg-slate-50 p-4 md:p-8 font-sans text-slate-800">
+    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-lg p-6 md:p-10 border border-slate-100">
         
-        <!-- Bagian Judul -->
-        <div class="mb-8 border-b pb-4">
-            <span class="inline-block px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-bold rounded-md uppercase tracking-wider mb-2">Excel Data Analytics</span>
-            <h1 class="text-3xl md:text-4xl font-bold text-slate-800">Interactive Sales & Revenue Dashboard</h1>
-            <p class="text-slate-600 mt-2">Filter the data using the slicers below to explore different metrics.</p>
+        <!-- 1. Header & Pembuka (Konteks) -->
+        <div class="mb-8 border-b border-slate-200 pb-6">
+            <a href="index.html" class="inline-flex items-center text-sm font-bold text-slate-500 hover:text-navy mb-6 transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Portfolio
+            </a>
+            
+            <span class="inline-block px-3 py-1 bg-gold/10 text-gold text-xs font-bold rounded-md uppercase tracking-widest mb-3">Data Analytics Project</span>
+            <h1 class="text-3xl md:text-4xl font-bold text-navy mb-4">Specialized Bicycles: Global Sales & Profitability Analysis</h1>
+            
+            <div class="prose max-w-none text-slate-600 space-y-4 text-justify md:text-left">
+                <p><strong>Context & Objective:</strong> Sebagai salah satu merek sepeda premium terkemuka, Specialized membutuhkan visibilitas yang lebih tajam terhadap performa ritel global mereka. Masalah utama yang dihadapi adalah tingginya volume penjualan yang tidak selalu berbanding lurus dengan efisiensi margin keuntungan di berbagai region.</p>
+                <p>Proyek ini bertujuan untuk membedah data transaksi historis, mengidentifikasi demografi pelanggan paling potensial, menemukan anomali profitabilitas antar negara, serta memetakan pola pembelian produk. <em>Dashboard</em> interaktif di bawah ini dibangun sepenuhnya menggunakan Microsoft Excel untuk menyajikan data secara dinamis.</p>
+            </div>
         </div>
         
-        <!-- Area Iframe Excel Lu -->
-        <div class="w-full h-[500px] md:h-[650px] rounded-lg overflow-hidden border border-slate-200 mb-8 bg-slate-100 flex items-center justify-center">
+        <!-- 2. Area Iframe Dashboard Excel -->
+        <div class="w-full h-[500px] md:h-[650px] rounded-lg overflow-hidden border border-slate-200 mb-10 bg-slate-100 flex items-center justify-center shadow-inner">
             <iframe class="w-full h-full" frameborder="0" scrolling="no" src="https://1drv.ms/x/c/5198b20f630fb215/IQTjKMMoxv0vSrUtqoeb_5vDAUovKmnYuDjJUIbMZmlTIAA?em=2&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&wdAllowInteractivity=True"></iframe>
         </div>
         
-        <!-- Area Insight buat nanti lu isi -->
-        <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
-            <h2 class="text-xl font-bold text-slate-800 mb-3">Key Insights</h2>
-            <ul class="list-disc list-inside text-slate-600 space-y-2">
-                <li>Insight 1: [Bisa ditulis analisis lu di sini nanti]</li>
-                <li>Insight 2: [Bisa ditulis analisis lu di sini nanti]</li>
-            </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- 3. Bagian Key Insights -->
+            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                <div class="flex items-center mb-4">
+                    <div class="w-8 h-8 rounded-full bg-navy text-white flex items-center justify-center mr-3 font-bold text-sm">1</div>
+                    <h2 class="text-xl font-bold text-navy">Key Insights</h2>
+                </div>
+                <ul class="space-y-4 text-slate-600 text-sm">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-gold mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>Rentang umur <strong>27 - 36 tahun</strong> adalah demografi penyumbang <em>revenue</em> paling besar.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-gold mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>Secara angka kotor (<em>Revenue</em>), Amerika Serikat mendominasi pemasukan tertinggi. Namun, tingkat efisiensi <em>Margin</em> profit paling sehat justru berada di pasar <strong>Jerman</strong>.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-gold mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>Produk <em>Tires and Tubes</em> terjual paling banyak secara kuantitas. Sebaliknya, margin profit terbesar justru disumbangkan oleh penjualan aksesoris <strong>Helmets</strong>.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-gold mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>Tren penjualan memuncak pada bulan <strong>Desember</strong> (siklus liburan akhir tahun 2015) dan bulan <strong>Juni</strong> (siklus <em>summer</em> 2016).</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 4. Bagian So, What's Next? (Rekomendasi) -->
+            <div class="bg-navy p-6 rounded-xl border border-slate-800 text-slate-200 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-gold/5 rounded-full -mr-10 -mt-10 blur-2xl"></div>
+                <div class="flex items-center mb-4 relative z-10">
+                    <div class="w-8 h-8 rounded-full bg-gold text-navy flex items-center justify-center mr-3 font-bold text-sm">2</div>
+                    <h2 class="text-xl font-bold text-white">So, What's Next?</h2>
+                </div>
+                <ul class="space-y-4 text-sm relative z-10">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-gold mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <span><strong>Optimalisasi Budget Marketing:</strong> Alokasikan porsi anggaran terbesar secara spesifik ke rentang usia 27-36 tahun. Sesuaikan <em>branding</em> visual dan *copywriting* iklan dengan tren pasar milenial mapan.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-gold mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <span><strong>Strategic Geographic Focus:</strong> Lakukan ekspansi pasar yang agresif di Jerman untuk memaksimalkan volume pada margin yang sudah sehat. Sebaliknya, lakukan audit efisiensi operasional atau kurangi diskon berlebihan di pasar AS.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-gold mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <span><strong>Taktik Cross-Selling:</strong> Buat program promosi <em>bundling</em> yang mengikat pembelian produk ban (perputaran cepat) dengan produk Helm (profitabilitas tinggi).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-gold mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <span><strong>Manajemen Inventory:</strong> Optimalkan rantai pasok dan pastikan ketersediaan stok gudang aman setidaknya 1 bulan sebelum memasuki puncak permintaan di bulan Juni (Summer) dan Desember (Holiday Season).</span>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </div>
